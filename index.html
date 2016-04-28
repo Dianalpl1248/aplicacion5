@@ -1,0 +1,346 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.5.5.min.css"/>
+<link rel="stylesheet" href="css/temasproyec1.min.css"/>
+<!--grupo javaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/informativa.jpg','imagenes/calentamiento.jpg','imagenes/calentamiento2.jpg','imagenes/universo.jpg','imagenes/tierra.jpg')">
+<div data-role="page" id="principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DÍA INTERNACIONAL DE LA TIERRA</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+ </div>
+  <div>
+  <center>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('diatierra','','imagenes/informativa.jpg',1)"><img src="imagenes/diatierra.jpg" width="450" height="250" id="diatierra"></a>
+  </center>
+  </div>
+ 
+  <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>CUANDO SE CELEBRA EL DIA DE LA TIERRA</h2>
+  <p>Muestra la fecha a partir de su celebración</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>PORQUE SE CELEBRA</h2>
+  <p>Muestran los acontecimientos que isieron que se celebrara ese día</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>CUIDADOS DEL MEDIO AMBIENTE</h2>
+  <p>Muestra las mediddas y protocolos</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CALENTAMIENTO GLOBAL</h2>
+      <p>Muestra las afectaciones que provoca la contaminación</p>
+      </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>TIPOS DE CONTAMINACIÓN</h2>
+     <p>Muestra las distintas formas de contaminar al planeta Tierra</p>
+     </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>MI ENTORNO CON EL MEDIO AMBIENTE</h2>
+     <p>Muestra la contaminacion de mi comunidad</p>
+     </a>
+     </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+    <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DESDE CUANDO EXISTE ESTA CELEBRACIÓN</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <h2>Su primera celebración fue en 1970 y mas de 20 millones de personas respondieron a la convocatoria.<br>  En 1968, Morton Hilbert y el U.S. Public Health Service (Servicio de Salud Pública de E.E.U.U.), organizaron el Simposio de Ecología Humana, se realiza una conferencia por los nombrados anteriormente para una asamblea o conferencia medioambiental para que estudiantes escucharan a científicos hablar sobre los efectos del deterioro ambiental en la salud humana.
+     <br><br>
+     <center><img src="imagenes/publicser.jpg" width="250" height="180" border="3">
+     <br>
+     <img src="imagenes/hilbert.jpg" width="200" height="180" align="right" border="3" >
+     </center>
+     <br>
+     Este fue el primer antecedente del Día de la Tierra. Durante los siguientes dos años, Hilbert y sus estudiantes trabajaron para planear el primer Día de la Tierra.
+     <br><br>
+      Surgieron otros esfuerzos como Survival Project (Proyecto para la Supervivencia), uno de los primeros eventos educacionales de conciencia ambiental, que fue llevado a cabo en la Universidad Northwestern el 23 de enero de 1970. Este fue el primero de varios eventos realizados en campus universitarios por todo Estados Unidos. 
+      <br>
+      Así mismo, Ralph Nader empezó a hablar acerca de la importancia de la ecología en 1970.
+      <br><br>
+      La <b>primera manifestación tuvo lugar el 22 de abril de 1970</b>, promovida por el senador y activista ambiental "Gaylord Nelson", para la creación de una agencia ambiental. 
+      <br>
+      En esta convocatoria participaron dos mil universidades, diez mil escuelas (primarias y secundarias) y centenares de comunidades. La presión social tuvo sus logros y el gobierno de los Estados Unidos creó la Environmental Protection Agency (Agencia de Protección Ambiental) y una serie de leyes destinadas a la protección del medio ambiente.<br><br>
+      <center><img src="imagenes/manifestacion.jpg" width="440" height="250" border="3"> </center>
+      <br>
+En <b>1972 se celebró la primera conferencia internacional sobre el medio ambiente.</b> La Cumbre de la Tierra de Estocolmo, cuyo objetivo fue sensibilizar a los líderes mundiales sobre la magnitud de los problemas ambientales.</h2>
+     
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿PORQUÉ SE CELEBRA?</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <h2> 
+El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día <b>"para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra".</b><br><br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('tierratodos','','imagenes/universo.jpg',1)"><img src="imagenes/tierratodos.jpg" width="440" height="260" id="tierratodos"></a> 
+<br><br>
+ Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos. 
+<br><br><center><img src="imagenes/animales.jpg" width="440" height="250" border="3"> </center></h2>
+
+<iframe width="440" height="315" src="https://www.youtube.com/embed/dlh4htYFIj0" frameborder="0" allowfullscreen></iframe>
+</div>
+ </div>
+ <div data-role="footer" data-theme="a">
+    <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+    </div>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CUIDADO DEL MEDIO AMBIENTE</h1>
+ </div>
+ <h2><center>PARA SOLUCIONAR EL  PROBLEMA DE CONTAMINACIÓN EN NUESTRO PAÍS SE DEBEN TOMAR ALGUNAS MEDIDAS:</center><br>
+<UL><LI>El estado debe preocuparse del problema de contaminación, aplicando leyes fuertes, controlando su cumplimiento y sancionando a los transgresores.</li><br>
+<LI>El problema ambiental afecta con severidad  al bien común y a la calidad de vida. El bien común es una responsabilidad del estado actuando como representante del bienestar de todos los ciudadanos.</li><br>
+<LI>También están involucrados los Gobiernos Municipales, responsables de la disposición de las basuras, de las áreas verdes, de las aguas, del control de los ruidos molestos.</li><br>
+<LI>Nosotros como ciudadanos debemos tomar conciencia del problema que vivimos y nos afecta día tras día, exigir respeto por el medio ambiente, el aporte de los ciudadanos puede contribuir en algunos aspectos como:</li></h2></UL>
+
+ <div data-role="content" align="center">
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1> MEDIDAS PARA SOLUCIONAR LOS PROBLEMAS DE CONTAMINACIÓN</h1>
+  <div>
+  <h2>** Aplica la regla de las 3 R's: reducir, reciclar y reutilizar.</b> **<br>
+    <br>
+  <img src="imagenes/rrr.jpg" width="230" height="170" align="left" border="3">Siempre podemos minimizar nuestros residuos e intentar utilizar y consumir solo aquello que nos es realmente necesario. A la vez, podemos dar nuevos usos a aquello que íbamos a desechar y aprovecharlo al máximo. Y, por último, cuando algo ya resulta inservible, es necesario tirarlo al contenedor de reciclaje correspondiente para que se pueda llevar a cabo el pertinente proceso para reciclarlo.   </h2>
+  <h2><br>
+    
+    ** Planta árboles **   <br>
+    <br>
+    En el Día de la Tierra, podemos llevar a cabo una sencilla acción como es plantar á<img src="imagenes/arboles.jpg" width="230" height="170" align="right" border="3">rboles que resulta totalmente necesaria y útil para conservar nuestros bosques, los encargados de convertir mediante su proceso de fotosíntesis el dióxido de carbono (CO2) de la atmósfera en oxígeno, el gas que necesitamos para respirar.<br>
+    <br>
+  </h2>
+  <h2>
+    ** Conciencia a los más pequeños **    <br>
+    <br>
+    <img src="imagenes/manu.jpg" width="230" height="170" align="left" border="3">Es importante que los niños y niñas tomen conciencia de lo importante que es la preservación de la Tierra ya desde que son pequeños. La cultura ecológica se ha convertido en algo indispensable para mejorar la vida en este planeta y está en manos de todos el aportar nuestro granito de arena día a día.</h2>
+  <h2> Así que explícaselo a los más pequeños y durante el Día de la Tierra podéis hacer actividades como salir de excursión a ver la naturaleza, dibujar y pintar sobre la ecología, etc. Incluso puedes hacer manualidades con material reciclado para celebrar el Día de la Tierra. <br>
+</h2>
+  <h2><br>
+    ** Usa tu bicicleta     **<br>
+    </h2>
+  <h2><br>
+    La bicicleta es uno de los medios de transporte más ecológicos, así que el Dí<img src="imagenes/bici.jpg" width="203" height="170" align="right" border="3" >a de la Tierra puede ser un buen momento para decidirte a aparcar el coche e ir a trabajar, a comprar, a pasear... en bicicleta. Además, es una forma de hacer deporte que te ayudará a estar en forma. <br><br>
+  </h2>
+  <h2>
+    ** Organiza una recogida de basura **  <br><br>
+    <img src="imagenes/recoleccion.jpg" width="230" height="170" align="left" border="3"></h2>
+  <h2>Ponte de acuerdo con un grupo de gente cercana a ti y organiza una salida a recoger basura y residuos a algún sitio cercano como puede ser una playa, un monte, un parque... Contribuiras a mantener limpios los espacios públicos y a la preservación del planeta. <br>
+  </h2>
+  <h2>&nbsp;</h2>
+  <h2>
+    ** Haz que todos los días sean el Día de la Tierra **<br>
+    <br>
+    Convierte estas acciones en hábitos y coopera con el medio ambiente a diario como si <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('planeta','','imagenes/tierra.jpg',1)"><img src="imagenes/planeta.jpg" width="230" height="170" id="planeta"></a>cada día fuera el Día de la Tierra.Pequeños gestos de cada uno de nosotros se convierten en una gran ayuda para conservar la Tierra y seguir disfrutando del planeta. </h2>
+  <p>&nbsp;</p>
+  </div>
+  </div>
+  </div>  
+   <div>
+      <h2>&nbsp;</h2>
+      <h1>PROLOGOS PARA CONSERVAR EL MEDIO AMBIENTE</h1>
+      <h2>Modificar tus hábitos diarios:<br><br>
+      1.- Apaga todo lo que requiera energía cuando no lo uses. <br><br>
+      2.- Desenchufa los aparatos siempre que sea posible.<br><br>
+      3.- Cambia tu secadora por un buen tendedero al viejo estilo.<br><br>
+      4.- Usa tu aire acondicionado con moderación o no lo uses en lo absoluto.<br><br>
+      5.- Cierra los conductos del calefactor y del aire acondicionado en tu casa. <br><br>
+      6.- No uses máquinas de ejercicios electrónicas.<br><br>
+      7.- Usa una manta o un suéter cálidos en el invierno.
+        <br><br>
+        <img src="imagenes/uno.jpg" width="90" height="75">
+        <img src="imagenes/dos.jpg" width="90" height="75">
+        <img src="imagenes/tres.jpg" width="90" height="75">
+        <img src="imagenes/cuatro.jpg" width="90" height="75">
+        <img src="imagenes/cinco.jpg" width="90" height="75">
+        <img src="imagenes/seis.jpg" width="90" height="75">
+        <img src="imagenes/siete.jpg" width="90" height="75">
+         </h2>
+         </div>
+</div>
+ <div data-role="footer" data-theme="a">
+   <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CALENTAMIENTO GLOBAL Y CAMBIO CLIMÁTICO</h1>
+ </div>
+ <div data-role="content" align="center">
+    <div>
+    <h1>CALENTAMIENTO GLOBAL</h1>
+      <h2>Se refiere al aumento gradual de las temperaturas de la atmósfera y océanos de la Tierra que se ha detectado en la actualidad, además de su continuo aumento que se proyecta a futuro.
+      <br><br>
+      El aumento de la temperatura se espera será mayor en los polos, en especial en el Ártico y se observará un retroceso de los glaciares, hielos permanentes y hielo en los mares.<br><br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('calentamiento','','imagenes/calentamiento.jpg',1)"><img src="imagenes/calentamientocentigrados.png" width="440" height="250" id="calentamiento"></a><br><br>
+      Otros efectos incluirían clima extremo más frecuente, lo que incluye sequías, olas de calor, huracanes y precipitaciones fuertes. Se esperan extinciones de especies debido a los cambios de temperatura y variaciones fuertes en el rendimiento de las cosechas.<br><br>
+      Se postula que si el aumento de la temperatura promedio global es mayor a 4ºC comparado con las temperaturas preindustriales, en muchas partes del mundo ya los sistemas naturales no podrán adaptarse y, por lo tanto, no podrán sustentar a sus poblaciones circundantes. En pocas palabras, no habrán recursos naturales para sustentar la vida humana en las condiciones actuales.
+      <br><br>
+      <img src="imagenes/proyecciones.png" width="440" height="250"> 
+       <br><br>
+       <h1>CAMBIO CLIMÁTICO</h1>
+       <h2>Es definido como un cambio estable y durable en la distribución de los patrones de clima en periodos de tiempo que van desde décadas hasta millones de años. Pudiera ser un cambio en las condiciones climáticas promedio o la distribución de eventos en torno a ese promedio (por ejemplo más o menos eventos climáticos extremos). El cambio climático puede estar limitado a una región específica, como puede abarcar toda la superficie terrestre.
+<br><br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cambio','','imagenes/calentamiento2.jpg',1)"><img src="imagenes/cambio.jpg" width="440" height="250" id="cambio"></a><br><br>
+El término, a veces se refiere específicamente al cambio climático causado por la actividad humana, a diferencia de aquellos causados por procesos naturales de la Tierra y el Sistema Solar. En este sentido, especialmente en el contexto de la política ambiental, el término “cambio climático” ha llegado a ser sinónimo de “calentamiento global antropogénico“, o sea un aumento de las temperaturas por acción de los humanos.</h2>      
+    </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+    <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>TIPOS DE CONTAMINACIÓN</h1>
+ </div>
+ <div data-role="content" align="center">
+   <div>
+     <h2>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:
+<br>
+<ul></li></ul>
+<li>Contaminación del Agua</li></ul>
+<li>Contaminación del Aire</li></ul>
+<li>Contaminación del Suelo</li></ul>
+<li>Contaminación Sérmica</li></ul>
+<li>Contaminación Radiactiva</li></ul>
+<li>Contaminación Acústica</li></ul>
+<li>Contaminación Lumínica</li></ul>
+     <img src="imagenes/tipos.jpg" width="440" height="320"><br><br>
+     *Contaminación del Agua causada por:
+     <br>
+     <ul>
+<li>Los residuos industriales se vierten en estos cuerpos de agua. Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.</li><br>
+<li>Insecticidas, pesticidas y productos químicos de maduración que se utilizan en las plantas que se usan en el sistema de aguas subterráneas o arroyos cercanos.</li><br>
+<li>Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada “eutrofización”, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable.</li><br>
+<li>‘Derrames de petróleo’ son causados ​​cuando los buques petroleros gigantes y plataformas petrolíferas que están presentes en los océanos están dañadas por cualquiera tipo de error humano o natural causando un daño a largo tiempo para el océano. Como el petróleo es más ligero que el agua, flota sobre el agua formando una capa de bloqueo del luz del sol.</li>
+</ul><img src="imagenes/agua.jpg" width="250" height="160" border="3"><br><br>
+     *Contaminación Acústica causada por:
+     <br><br>
+     La contaminación acústica se produce cuando hay excesiva cantidad de ruido o sonido desagradable que causa la interrupción temporal en el equilibrio natural. <br><br>
+     Esta definición es generalmente aplicable a los sonidos o ruidos que no son naturales, ya sea en su volumen o de su producción. Incluso los aparatos eléctricos en el hogar tienen un constante zumbido o pitido. En general, la falta de planificación urbana aumenta la exposición a sonidos no deseados. Es por esto que es necesario frenar a tiempo la contaminación acústica.<br>
+<br><img src="imagenes/acustica.jpg" width="250" height="160" border="3"><br>
+    <br>
+    *Contaminación Lumínica causada por:
+    <br><br>
+    Es el uso excesivo y prolongado de luces artificiales, de una manera que obstaculiza el brillo del cielo nocturno, lo que altera los ciclos naturales y las actividades de la vida silvestre, problemas de salud en los seres humanos, y el impedimento de observar las estrellas y otros planetas.<br>
+    <ul></li></ul>
+<li>Publicidad electrónica y Centros Comerciales</li></ul>
+<li>Eventos deportivos nocturnos</li></ul>
+<li>Luces de los autos</li></ul>
+<li>Parques de la ciudad, aeropuertos, lugares públicos</li>
+</ul><br>
+    <img src="imagenes/luminica.jpg" width="250" height="160" border="3">
+     </h2>
+ </div></div>
+ <div data-role="footer" data-theme="a">
+    <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+  </div>
+ </div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CONTAMINACIÓN EN MI COMUNIDAD</h1>
+ </div>
+ <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:970px;height:181px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ 
+ <div data-role="content" align="center">
+    <div>
+      <h2>--Los principales problemas de contaminación en mi comunidad son los contenedores llenos de basura y regada alrededor de ellos. 
+<br><br>Esto es a causa de que los ciudadanos no tiran su basura en bolsas solo la depositan asi en el contenedor y aparte los carros de basura no van seguido a recogerla es lo que provoca un mal olor, tambien mal aspecto visual, puede provocar enfermedades, plagas de perros en toda la basura etc.
+<br><br>
+      <img src="imagenes/contenedores.jpg" width="250" height="160" border="3">
+<br><br>--El otro problema es la contaminación del aire <br><br>Esta afectando a la atmosféra debido a la quema de basura e incendios ya sean provocados o no en los cerros que se encuentran alrededor de mi comunidad
+</h2>
+    </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+     <h4>APP 5</h4>
+    <h4>PERALTA LARIOS DIANA LAURA</h4>
+   </div>
+  </div>
+</div>
+
+</body>
+</html>
